@@ -24,8 +24,8 @@
   "scripts": {
     "dev": "tsmodule dev",
     "export-docs": "pnpm typedoc src",
-    "export": "tsc -p .",
-    "build": "pnpm export && pnpm export-docs",
+    "export": "tsc",
+    "build": "npm export",
     "test": "pnpm export && ava",
     "retest": "ava",
     "prepare": "npm run export",
