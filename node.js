@@ -1,1 +1,1 @@
-export * from "./dist/lib/openai/node.js";
+module.exports = ("./dist/lib/openai/node.js")
