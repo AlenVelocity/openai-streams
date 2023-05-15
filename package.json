@@ -28,7 +28,7 @@
     "build": "pnpm export && pnpm export-docs",
     "test": "pnpm export && ava",
     "retest": "ava",
-    "prepare": "npm run build",
+    "prepare": "npm run export",
     "prepublishOnly": "pnpm test",
     "lint": "eslint src --fix"
   },
