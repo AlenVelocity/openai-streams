@@ -24,10 +24,11 @@
   "scripts": {
     "dev": "tsmodule dev",
     "export-docs": "pnpm typedoc src",
-    "export": "tsmodule build",
+    "export": "tsc -p .",
     "build": "pnpm export && pnpm export-docs",
     "test": "pnpm export && ava",
     "retest": "ava",
+    "prepare": "npm run build".
     "prepublishOnly": "pnpm test",
     "lint": "eslint src --fix"
   },
